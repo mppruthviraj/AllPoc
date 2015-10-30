@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFrameworkTest", "Enti
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegateExample", "DelegateExample\DelegateExample.csproj", "{17E906F9-C901-43C4-8F37-EB8F039589F3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtentionMethodImplementation", "ExtentionMethodImplementation\ExtentionMethodImplementation.csproj", "{5A1214D2-6430-4980-B858-F9E09859C81E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{17E906F9-C901-43C4-8F37-EB8F039589F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17E906F9-C901-43C4-8F37-EB8F039589F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{17E906F9-C901-43C4-8F37-EB8F039589F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A1214D2-6430-4980-B858-F9E09859C81E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A1214D2-6430-4980-B858-F9E09859C81E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A1214D2-6430-4980-B858-F9E09859C81E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A1214D2-6430-4980-B858-F9E09859C81E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
