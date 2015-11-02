@@ -9,23 +9,31 @@ namespace ExtentionMethodImplementation
 {
      public static class ExtentionMethodClass
     {
-         public static object CompareEquals<T>(this T data, T data2)
+         /// <summary>
+         /// Method to compare two objects of same class
+         /// </summary>
+         /// <typeparam name="T"></typeparam>
+         /// <param name="objectFromCompare"></param>
+         /// <param name="objectToCompare"></param>
+         /// <returns></returns>
+         public static object CompareEquals<T>(this T objectFromCompare, T objectToCompare)//Generic method
          {
-
+             //Gets all the properties of the class
              PropertyInfo[] props = typeof(T).GetProperties(BindingFlags.Public | BindingFlags.Instance);
              foreach (PropertyInfo prop in props)
              {
-                 object dataFromCompare = data.GetType().GetProperty(prop.Name).GetValue(data, null);
-                 object dataToCompare = data2.GetType().GetProperty(prop.Name).GetValue(data2, null);
-                 Type type = data.GetType().GetProperty(prop.Name).GetValue(data2, null).GetType();
+                 object dataFromCompare = objectFromCompare.GetType().GetProperty(prop.Name).GetValue(objectFromCompare, null);
+                 object dataToCompare = objectToCompare.GetType().GetProperty(prop.Name).GetValue(objectToCompare, null);
+                 Type type = objectFromCompare.GetType().GetProperty(prop.Name).GetValue(objectToCompare, null).GetType();
                  if (prop.PropertyType.IsClass)
                  {
                      dynamic convertedFromValue = Convert.ChangeType(dataFromCompare, type);
                      dynamic convertedToValue = Convert.ChangeType(dataToCompare, type);
 
                      object result = ExtentionMethodClass.CompareEquals(convertedFromValue, convertedToValue);
-                     bool convertedResult = (bool)result;
-                     if (!convertedResult)
+
+                     bool compareResult = (bool)result;
+                     if (!compareResult)
                          return false;
                  }
 
