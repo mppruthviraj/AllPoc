@@ -18,6 +18,13 @@ namespace ExtentionMethodImplementation
          /// <returns></returns>
          public static object CompareEquals<T>(this T objectFromCompare, T objectToCompare)//Generic method
          {
+             if (objectFromCompare == null && objectToCompare == null)
+                 return true;
+             else if (objectFromCompare == null && objectToCompare != null)
+                 return false;
+             else if (objectFromCompare != null && objectToCompare == null)
+                 return false;
+
              //Gets all the properties of the class
              PropertyInfo[] props = typeof(T).GetProperties(BindingFlags.Public | BindingFlags.Instance);
              foreach (PropertyInfo prop in props)
@@ -25,7 +32,7 @@ namespace ExtentionMethodImplementation
                  object dataFromCompare = objectFromCompare.GetType().GetProperty(prop.Name).GetValue(objectFromCompare, null);
                  object dataToCompare = objectToCompare.GetType().GetProperty(prop.Name).GetValue(objectToCompare, null);
                  Type type = objectFromCompare.GetType().GetProperty(prop.Name).GetValue(objectToCompare, null).GetType();
-                 if (prop.PropertyType.IsClass)
+                 if (prop.PropertyType.IsClass && !prop.PropertyType.FullName.Contains("System.String"))
                  {
                      dynamic convertedFromValue = Convert.ChangeType(dataFromCompare, type);
                      dynamic convertedToValue = Convert.ChangeType(dataToCompare, type);
@@ -43,6 +50,7 @@ namespace ExtentionMethodImplementation
              }
 
              return true;
+
          }
     }
 }
