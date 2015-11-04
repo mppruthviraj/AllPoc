@@ -11,6 +11,13 @@ namespace EmptyWebApplication
 {
     public partial class Default : System.Web.UI.Page
     {
+        [System.Web.Services.WebMethod]
+        public static string GetText(string name)
+        {
+            return "Hello " + name + Environment.NewLine + "The Current Time is: "
+                + DateTime.Now.ToString() +" from server";
+        }
+
         protected void Page_Load(object sender, EventArgs e)
         {
             //InitializeCulture();

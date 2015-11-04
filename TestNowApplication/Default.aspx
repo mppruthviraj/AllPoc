@@ -52,6 +52,17 @@
                 </asp:GridView>--%>
             </div>
 
+            <div>
+
+                <asp:TextBox ID="txtUserName" runat="server"></asp:TextBox>
+                <input id="btnGetTime" type="button" value="Show Current Time" onclick = "ShowCurrentTime()" />
+                <div>
+                     <span id="span1">Text</span>
+                </div>
+            </div>
+
+
+
         </div>
 
     </form>

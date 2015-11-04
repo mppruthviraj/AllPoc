@@ -20,3 +20,23 @@ $(document).ready(function () {
         );
 
 });
+
+function ShowCurrentTime() {
+    //alert($("#<%= txtUserName.ClientID %>").val());
+    $.ajax({
+        type: "POST",
+        url: "Default.aspx/GetText",
+        data: '{name: "me" }',
+        contentType: "application/json; charset=utf-8",
+        dataType: "json",
+        success: function (htmlText) {
+            $("#span1").html(htmlText.d);
+        },
+        failure: function (response) {
+            $("#span1").html(response.d);
+        }
+    });
+}
+function OnSuccess(response) {
+    alert(response.d);
+}
