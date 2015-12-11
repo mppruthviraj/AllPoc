@@ -10,12 +10,18 @@ namespace DelegateExample
     {
         public static void Main(string[] args)
         {
-            SampleClass smpClass = new SampleClass();
-            SingleDelegate delegateEx = SampleClass.Add;
-            delegateEx += SampleClass.Mul;
-            delegateEx += SampleClass.Sub;
-            delegateEx(10,12);
-            Console.ReadLine();
+            //SampleClass smpClass = new SampleClass();
+            //SingleDelegate delegateEx = SampleClass.Add;
+            //delegateEx += SampleClass.Mul;
+            //delegateEx += SampleClass.Sub;
+            //delegateEx(10,12);
+            //Console.ReadLine();
+
+            InheritAbstractClass inAbClass = new InheritAbstractClass();
+            var methodValue = inAbClass.AbstractMethodWithImplementation();
+            var propertyValue = inAbClass.publicValue1;
+
+            
 
         }
     }

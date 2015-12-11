@@ -159,25 +159,58 @@ namespace AllSortingTechnique
             //Environment.ExitCode = result;
 
 
-            int n = 5;
-            //int[,] array = new int[5, 5]{{ 1, 0, 1, 1, 0 },
-            //    { 0, 1, 1, 1, 0 },
-            //    { 1, 1, 1, 1, 1 },
-            //    { 1, 0, 1, 1, 1 },
-            //    { 1, 1, 1, 1, 1 }
-            //};
+            //int n = 5;
+            ////int[,] array = new int[5, 5]{{ 1, 0, 1, 1, 0 },
+            ////    { 0, 1, 1, 1, 0 },
+            ////    { 1, 1, 1, 1, 1 },
+            ////    { 1, 0, 1, 1, 1 },
+            ////    { 1, 1, 1, 1, 1 }
+            ////};
 
-            bool[,] array2D = new bool[5, 5] {{ true, false, true, true, false },
-                                            { false, true, true, true, false },
-                                            { true, true, true, true, true },
-                                            { true, false, true, true, true },
-                                            { true, true, true, true, true } };
+            //bool[,] array2D = new bool[5, 5] {{ true, false, true, true, false },
+            //                                { false, true, true, true, false },
+            //                                { true, true, true, true, true },
+            //                                { true, false, true, true, true },
+            //                                { true, true, true, true, true } };
 
-            Exchanging1And0 exOneAndZero = new Exchanging1And0();
-            exOneAndZero.ProcessArrayStackOverFlow(array2D, 5);
+            //Exchanging1And0 exOneAndZero = new Exchanging1And0();
+            //exOneAndZero.ProcessArrayStackOverFlow(array2D, 5);
 
+            //CheckOddOccuringElement oddOccuring = new CheckOddOccuringElement();
 
-            Console.ReadLine();
+            //int[] ar = {2, 3, 5, 4, 5, 2, 4, 3, 5, 2, 4, 4, 2};
+
+            //int answer = oddOccuring.CheckOddOccuringElementComplexityN(ar, ar.Length);
+            //Console.WriteLine("{0}\n",answer);
+            const int m=2;
+            const int n=4;
+
+            int[,] sourceArray = new int[m,n] {{1,2,5,6},
+                                    {3,4,7,8,}};
+            int[,] destination = new int[n,m];
+            RotateArray rota = new RotateArray();
+            for (int i = 0; i < m; i++)
+            {
+                for (int j = 0; j < n; j++)
+                {
+                    Console.Write("{0} ", sourceArray[i, j]);
+                }
+                Console.WriteLine("");
+            }
+
+            destination = rota.Rotate(sourceArray,destination,m,n);
+
+            Console.WriteLine("----------------------------");
+            for (int i = 0; i < n;i++ )
+            {
+                for(int j=0;j<m;j++)
+                {
+                    Console.Write("{0} ",destination[i,j]);
+                }
+                Console.WriteLine("");
+            }
+
+                Console.ReadLine();
         }
     }
 }

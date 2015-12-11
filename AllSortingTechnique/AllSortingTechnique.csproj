@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BubbleSort.cs" />
+    <Compile Include="ChekOddOccuringElement.cs" />
     <Compile Include="DoublyLinkedList.cs" />
     <Compile Include="Exchanging1And0.cs" />
     <Compile Include="LinkedList.cs" />
@@ -50,6 +51,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReverseArray.cs" />
+    <Compile Include="RotateArray.cs" />
     <Compile Include="Seggregate0and1.cs" />
     <Compile Include="SelectionSort.cs" />
   </ItemGroup>
