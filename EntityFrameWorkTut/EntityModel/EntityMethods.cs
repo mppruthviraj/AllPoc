@@ -10,7 +10,8 @@ namespace EntityFrameWorkTut.EntityModel
         EmployeeDBContext empContext = new EmployeeDBContext();
         public List<Departments> GetDepartMents()
         {
-            return empContext.Departments.Include("Employees").ToList();
+            //return empContext.Departments.Include("Employees").ToList();
+            return null;
         }
 
         public void Insert(Employees employee)
@@ -18,6 +19,22 @@ namespace EntityFrameWorkTut.EntityModel
             empContext.Employees.Add(employee);
             empContext.SaveChanges();
         }
+
+        public void InsertListOFEmployees(List<Employees> employees)
+        {
+            empContext.Employees.AddRange(employees); ;
+        }
+
+        public void InsertCustomer(List<Customer> customerList)
+        {
+            empContext.Customer.AddRange(customerList);
+        }
+
+        public void SaveData()
+        {
+            empContext.SaveChanges();
+        }
+
 
         public void Update(Employees employee)
         {

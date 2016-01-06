@@ -23,6 +23,12 @@ namespace EmptyWebApplication
             //InitializeCulture();
         }
 
+        [System.Web.Services.WebMethod]
+        public static string WebTestMethod(string data)
+        {
+            return "Hi " + data;
+        }
+
         protected void btnTestResource_Click(object sender, EventArgs e)
         {
 

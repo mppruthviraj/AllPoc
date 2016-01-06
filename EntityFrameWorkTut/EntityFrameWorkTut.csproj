@@ -28,6 +28,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <IncludeIisSettings>true</IncludeIisSettings>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -70,6 +71,7 @@
     <Content Include="EmployeeDataShow.aspx" />
     <Content Include="Global.asax" />
     <Content Include="packages.config" />
+    <None Include="Properties\PublishProfiles\TestEntity.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -98,11 +100,15 @@
     <Compile Include="EmployeeDataShow.aspx.designer.cs">
       <DependentUpon>EmployeeDataShow.aspx</DependentUpon>
     </Compile>
+    <Compile Include="EntityModel\Customer.cs" />
     <Compile Include="EntityModel\Departments.cs" />
     <Compile Include="EntityModel\EmployeeDBContext.cs" />
     <Compile Include="EntityModel\EmployeeDBContextSeeder.cs" />
     <Compile Include="EntityModel\Employees.cs" />
     <Compile Include="EntityModel\EntityMethods.cs" />
+    <Compile Include="EntityModel\TestTable.cs" />
+    <Compile Include="EntityModel\User.cs" />
+    <Compile Include="EntityModel\UserProfile.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

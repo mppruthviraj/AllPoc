@@ -31,6 +31,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFrameWorkTut", "Entit
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularJSPractise", "AngularJSPractise\AngularJSPractise.csproj", "{FB3CB02D-10E2-4604-A35D-50D8D391D900}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocketProgramingServer", "SocketProgramingServer\SocketProgramingServer.csproj", "{5EEAAACF-1BC6-4BA5-A6C6-ECCA44240F6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocketProgramingClient", "SocketProgramingClient\SocketProgramingClient.csproj", "{BB003ED3-7D9B-4690-B314-0AEA23C7994D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -179,8 +183,31 @@ Global
 		{FB3CB02D-10E2-4604-A35D-50D8D391D900}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{FB3CB02D-10E2-4604-A35D-50D8D391D900}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{FB3CB02D-10E2-4604-A35D-50D8D391D900}.Release|Win32.ActiveCfg = Release|Any CPU
+		{5EEAAACF-1BC6-4BA5-A6C6-ECCA44240F6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EEAAACF-1BC6-4BA5-A6C6-ECCA44240F6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EEAAACF-1BC6-4BA5-A6C6-ECCA44240F6C}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{5EEAAACF-1BC6-4BA5-A6C6-ECCA44240F6C}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{5EEAAACF-1BC6-4BA5-A6C6-ECCA44240F6C}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{5EEAAACF-1BC6-4BA5-A6C6-ECCA44240F6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EEAAACF-1BC6-4BA5-A6C6-ECCA44240F6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EEAAACF-1BC6-4BA5-A6C6-ECCA44240F6C}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{5EEAAACF-1BC6-4BA5-A6C6-ECCA44240F6C}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{5EEAAACF-1BC6-4BA5-A6C6-ECCA44240F6C}.Release|Win32.ActiveCfg = Release|Any CPU
+		{BB003ED3-7D9B-4690-B314-0AEA23C7994D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB003ED3-7D9B-4690-B314-0AEA23C7994D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB003ED3-7D9B-4690-B314-0AEA23C7994D}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{BB003ED3-7D9B-4690-B314-0AEA23C7994D}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{BB003ED3-7D9B-4690-B314-0AEA23C7994D}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{BB003ED3-7D9B-4690-B314-0AEA23C7994D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB003ED3-7D9B-4690-B314-0AEA23C7994D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB003ED3-7D9B-4690-B314-0AEA23C7994D}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{BB003ED3-7D9B-4690-B314-0AEA23C7994D}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{BB003ED3-7D9B-4690-B314-0AEA23C7994D}.Release|Win32.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(Performance) = preSolution
+		HasPerformanceSessions = true
 	EndGlobalSection
 EndGlobal

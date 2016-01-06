@@ -14,14 +14,14 @@ namespace EntityFrameWorkTut
 
         protected void Application_Start(object sender, EventArgs e)
         {
-           // Database.SetInitializer(new EmployeeDBContextSeeder());
+           //Database.SetInitializer(new EmployeeDBContextSeeder());
         }
 
         protected void Session_Start(object sender, EventArgs e)
         {
 
         }
-
+        
         protected void Application_BeginRequest(object sender, EventArgs e)
         {
 

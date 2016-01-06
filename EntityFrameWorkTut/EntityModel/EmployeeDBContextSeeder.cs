@@ -7,94 +7,94 @@ namespace EntityFrameWorkTut.EntityModel
 {
     public class EmployeeDBContextSeeder : System.Data.Entity.DropCreateDatabaseIfModelChanges<EmployeeDBContext>
     {
-        protected override void Seed(EmployeeDBContext context)
-        {
-            Departments department1 = new Departments()
-            {
+        //protected override void seed(employeedbcontext context)
+        //{
+        //    departments department1 = new departments()
+        //    {
 
-                Name = "IT",
-                Location = "Bangalore",
-                Employees = new List<Employees>() { 
+        //        name = "it",
+        //        location = "bangalore",
+        //        employees = new list<employees>() { 
                 
-                  new Employees(){
+        //          new employees(){
 
-                      FirstName="Ram",LastName="K", Gender="M", Salary=90, JobTitle="Developer"
-                    },
-                   new Employees(){
+        //              firstname="ram",lastname="k", gender="m", salary=90, jobtitle="developer"
+        //            },
+        //           new employees(){
 
-                      FirstName="Kannaya",LastName="V", Gender="M", Salary=54, JobTitle="Support"
-                    },
-                   new Employees(){
+        //              firstname="kannaya",lastname="v", gender="m", salary=54, jobtitle="support"
+        //            },
+        //           new employees(){
 
-                      FirstName="Teju",LastName="K", Gender="F", Salary=92, JobTitle="Admin"
-                    },
-                   new Employees(){
+        //              firstname="teju",lastname="k", gender="f", salary=92, jobtitle="admin"
+        //            },
+        //           new employees(){
 
-                      FirstName="Yashu",LastName="P", Gender="F", Salary=54, JobTitle="Developer"
-                    }
+        //              firstname="yashu",lastname="p", gender="f", salary=54, jobtitle="developer"
+        //            }
                 
-                }
+        //        }
 
-            };
+        //    };
 
-            Departments department2 = new Departments()
-            {
+        //    departments department2 = new departments()
+        //    {
 
-                Name = "Payroll",
-                Location= "Chennai",
-                Employees = new List<Employees>() { 
+        //        name = "payroll",
+        //        location = "chennai",
+        //        employees = new list<employees>() { 
                 
-                  new Employees(){
+        //          new employees(){
 
-                      FirstName="Kavitha",LastName="Y", Gender="F", Salary=65, JobTitle="Accounts"
-                    },
-                   new Employees(){
+        //              firstname="kavitha",lastname="y", gender="f", salary=65, jobtitle="accounts"
+        //            },
+        //           new employees(){
 
-                      FirstName="Mahendar",LastName="P", Gender="M", Salary=78, JobTitle="Supervisor"
-                    },
-                   new Employees(){
+        //              firstname="mahendar",lastname="p", gender="m", salary=78, jobtitle="supervisor"
+        //            },
+        //           new employees(){
 
-                      FirstName="Sachin",LastName="T", Gender="M", Salary=98, JobTitle="Account"
-                    }                
-                }
+        //              firstname="sachin",lastname="t", gender="m", salary=98, jobtitle="account"
+        //            }                
+        //        }
 
-            };
+        //    };
 
-            Departments department3 = new Departments()
-            {
+        //    departments department3 = new departments()
+        //    {
 
-                Name = "Admin",
-                Location = "Delhi",
-                Employees = new List<Employees>() { 
+        //        name = "admin",
+        //        location = "delhi",
+        //        employees = new list<employees>() { 
                 
-                  new Employees(){
+        //          new employees(){
 
-                      FirstName="Ramcharan",LastName="C", Gender="M", Salary=67, JobTitle="Admin"
-                    },
-                   new Employees(){
+        //              firstname="ramcharan",lastname="c", gender="m", salary=67, jobtitle="admin"
+        //            },
+        //           new employees(){
 
-                      FirstName="Sudeep",LastName="S", Gender="M", Salary=98, JobTitle="Admin"
-                    },
-                   new Employees(){
+        //              firstname="sudeep",lastname="s", gender="m", salary=98, jobtitle="admin"
+        //            },
+        //           new employees(){
 
-                      FirstName="Yograj",LastName="B", Gender="M", Salary=76, JobTitle="Admin"
-                    },
-                   new Employees(){
+        //              firstname="yograj",lastname="b", gender="m", salary=76, jobtitle="admin"
+        //            },
+        //           new employees(){
 
-                      FirstName="Mohini",LastName="E", Gender="F", Salary=67, JobTitle="Admin"
-                    }
+        //              firstname="mohini",lastname="e", gender="f", salary=67, jobtitle="admin"
+        //            }
                 
-                }
+        //        }
 
-            };
+        //    };
 
 
-            context.Departments.Add(department1);
-            context.Departments.Add(department2);
-            context.Departments.Add(department3);
+        //    context.departments.add(department1);
+        //    context.departments.add(department2);
+        //    context.departments.add(department3);
 
-            base.Seed(context);
-        }
+        //    base.seed(context);
+        //}
 
     }
 }

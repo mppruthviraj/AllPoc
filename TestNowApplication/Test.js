@@ -40,3 +40,21 @@ function ShowCurrentTime() {
 function OnSuccess(response) {
     alert(response.d);
 }
+
+function CallAjax() {
+    $.ajax({
+        type: "POST",
+        url: "Default.aspx/WebTestMethod",
+        data: '{name: "raj" }',
+        contentType: "application/json; charset=utf-8",
+        dataType: "json",
+        success: function (htmlText) {
+            $("#span1").html(htmlText.d);
+        },
+        failure: function (response) {
+            $("#span1").html(response.d);
+        }
+    });
+
+    return true;
+}
